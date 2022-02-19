@@ -1,50 +1,45 @@
-<h1>Payment Form</h1>
-<p>Required fields are makred by <u>*</u></p>
-<form>
-<h2>Contact Information</h2>
+<!DOCTYPE html>
+<html>
+    <head></head>
 
+    <h1>Payment Form</h1>
 
- 
-    <input type="radio" id="Mr.">
-    <label for="Mr.">Mr.</label><br>
+    <p>Required fields are marked by <u>*</u></p>
 
-    <input type="radio" id="Ms.">
-    <label for="Ms.">Ms.</label><br>
+    <h2><strong>Contact Information</strong></h2>
 
-    <input type="radio" id="Mrs.">
-    <label for="Mrs.">Mrs.</label><br>
+    <form>
+        <!-- radio input -->
+        <input type="radio" name="Mr." value="Mr." checked>Mr.<br>
+        <input type="radio" name="Ms." value="Ms." >Ms.<br>
+        <input type="radio" name="Mrs." value="Mrs." >Mrs.<br>
+        <input type="radio" name="Mx." value="Mx." >Mx.<br><br>
 
-    <input type="radio" id="Mx.">
-    <label for="Mx.">Mx.</label><br>
-    
-  
-    <label for="fname">Name:*</label>
-    <input type="text" id="fname" name="fname"><br>
+        <!-- text field input for name -->
+        Name:*
+        <input type="text" name="name" placeholder="Name" required><br><br>
+        Email:*
+        <input type="email" name="email" placeholder="Email" required><br><br>
 
-    <label for="email">Email:*</label>
-    <input type="email" id="email" name="email">
+        <!-- Payment information -->
+        <h2>Payment Information</h2>
 
+        Card Type:
+        <select name="hi">
+            <option value="visa">Visa</option>
+            <option value="mastercard">Mastercard</option>
+            <option value="americanExpress">American Express</option>
+            <option value="discover">Discover</option>
+        </select><br><br>
 
+        Card Number:*
+        <input type="tel" placeholder="xxxx xxxx xxxx xxxx" required><br><br>
 
+        Expiration Date (MM/YY):*
+        <input type="text" placeholder="mm/yy" required><br><br>
 
+        <input type="submit" value="Submit Payment">
 
-<h2>Payment Information</h2>
+    </form>
 
-
-   
-    <label for="cardType">Card Type:</label>
-    <input type="range" id="cardType" name="Card Type:"><br>
-    
-
-    <label for="cardNumber">Card Number:*</label>
-    <input type="text" id="cardNumber" name="Card Number:*"><br>
-
-   
-    <label for="cardExp">Expiration Date (MM/YY):*</label>
-    <input type="text" id="cardExp" name="Expiration Date (MM/YY):*"><br>
-    
-    <input type="submit" id="submit" name="Submit">
-  
-
-</form>
-
+</html>
